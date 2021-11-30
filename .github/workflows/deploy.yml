@@ -10,7 +10,7 @@ jobs:
     steps:
       - name : Checkout
         uses: actions/checkout@v2
-      - run: docker build -t trandondockerhub/react-test -f Dockerfile.dev ./client
+      - run: docker build -t trandondockerhub/react-test -f ./client/Dockerfile.dev ./client
       - run: docker run -e CI=true trandondockerhub/react-test npm run test -- --coverage
 
       - name: Setup QEMU
