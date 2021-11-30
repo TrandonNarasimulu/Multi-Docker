@@ -14,7 +14,7 @@ jobs:
       - run: docker build -t trandon/multi-nginx ./nginx
       - run: docker build -t trandon/multi-server ./server
       - run: docker build -t trandon/multi-worker ./worker
-      - run: docker run -e CI=true trandon/react-test npm test -- --coverage
+      - run: docker run -e CI=true trandon/multi-client npm test -- --coverage
  
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*'
