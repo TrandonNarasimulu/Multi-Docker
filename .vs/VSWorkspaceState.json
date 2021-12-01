@@ -1,6 +1,7 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\client"
   ],
   "SelectedNode": "\\docker-compose.yml",
   "PreviewInSolutionExplorer": false
